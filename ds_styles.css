@@ -1,40 +1,26 @@
-body, html {
+/* General Styles */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
 }
 
-.background {
-  background-image: url('https://drive.google.com/file/d/1qBRSwbRsm4YVGDT75bVR7VoSUD3biYtw/view?usp=sharing');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Container */
 .gallery-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 1200px;
-}
-
-h1 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+  padding: 20px;
 }
 
+/* Gallery Grid */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  gap: 10px; /* Minimal distance between photos */
+  padding: 10px;
 }
 
+/* Image Styling */
 .gallery img {
   width: 100%;
   height: auto;
@@ -43,7 +29,8 @@ h1 {
   cursor: pointer;
 }
 
+/* Hover Effect */
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
