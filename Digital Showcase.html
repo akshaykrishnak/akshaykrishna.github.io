@@ -1,57 +1,28 @@
-# Digital Showcase
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Showcase</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
-        h1 {
-            color: red;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            padding: 20px;
-        }
-        .grid-item {
-            opacity: 0;
-            animation: fadeIn 0.5s forwards;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        .grid-item:nth-child(1) { animation-delay: 0.2s; }
-        .grid-item:nth-child(2) { animation-delay: 0.4s; }
-        .grid-item:nth-child(3) { animation-delay: 0.6s; }
-        .grid-item:nth-child(4) { animation-delay: 0.8s; }
-        .grid-item:nth-child(5) { animation-delay: 1.0s; }
-        .grid-item:nth-child(6) { animation-delay: 1.2s; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Photo Gallery</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Digital Showcase</h1>
-    <div class="grid-container">
-        <div class="grid-item"><img src="assets/Google_Cybersecurity.jpg" alt="Certificate 1" width="300"></div>
-        <div class="grid-item"><img src="certificate2.jpg" alt="Certificate 2" width="300"></div>
-        <div class="grid-item"><img src="certificate3.jpg" alt="Certificate 3" width="300"></div>
-        <div class="grid-item"><img src="certificate4.jpg" alt="Certificate 4" width="300"></div>
-        <div class="grid-item"><img src="certificate5.jpg" alt="Certificate 5" width="300"></div>
-        <div class="grid-item"><img src="certificate6.jpg" alt="Certificate 6" width="300"></div>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="D:\Projects\Responsive Gallery\Screenshot 2024-08-08 144817.png">
+      <img src="image2.jpg" alt="Photo 2">
+      <img src="D:\Projects\Responsive Gallery/1732939568533.png" alt="Photo 3">
+      <img src="image4.jpg" alt="Photo 4">
+      <img src="image5.jpg" alt="Photo 5">
+      <img src="image6.jpg" alt="Photo 6">
     </div>
+  </div>
 
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-image" src="" alt="Enlarged Photo">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
